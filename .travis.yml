@@ -6,4 +6,4 @@ before_install:
     - docker build -t testimg -f Dockerfile.dev .
 
 script:
-    - docker run testimg CI=true yarn test
+    - docker run testimg yarn test --ci
