@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t TEST-IMG -f Dockerfile.dev .
+    - docker build -t testimg -f Dockerfile.dev .
 
 script:
-    - docker run TEST-IMG yarn test -- --coverage
+    - docker run testimg yarn test -- --coverage
