@@ -5,9 +5,6 @@ services:
 before_install:
     - docker build -f Dockerfile.dev .
 
-script:
-    - echo "hello"
-
 deploy:
     provider: elasticbeanstalk
     region:   "us-east-1"
